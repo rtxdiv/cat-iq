@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat IQ test</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="mainblock">
+
+        <div id="question">
+            <div class="title">Способность к решению сложных механических задач</div>
+            <div class="description">Оцените способность вашей кошки к решению сложных механических задач: открытие дверей и шкафов, доставание предметов из труднодоступных мест</div>
+        </div>
+
+        <div id="progressbar"></div>
+
+        <img src="./img/seal.png" alt="rtxdiv-seal" id="seal">
+
+        <div id="test-body">
+
+            <div id="answers">
+
+                <div class="ans1" onclick="pick(this)"><img src="./img/ok.png" alt="ok"></div>
+                <div class="ans2" onclick="pick(this)"><img src="./img/ok.png" alt="ok"></div>
+                <div class="ans3" onclick="pick(this)"><img src="./img/ok.png" alt="ok"></div>
+                <div class="ans4" onclick="pick(this)"><img src="./img/ok.png" alt="ok"></div>
+                <div class="ans5" onclick="pick(this)"><img src="./img/ok.png" alt="ok"></div>
+
+            </div>
+
+            <div class="buttons">
+                <button id="back" onclick="back()">Назад</button>
+                <button id="next" onclick="next()">Дальше</button>
+            </div>
+        </div>
+
+        <div id="test-result">
+            <div class="box">
+                <div id="bar-colors"></div>
+                <div id="bar"></div>
+                <div id="filler"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" id="tg">
+        <div class="textblock">
+            <a href="https://t.me/busa_news">Подпишитесь на наш Telegram-канал</a><br>
+            <a href="https://t.me/busa_news">@busa_news</a>
+        </div>
+        <img src="./img/tg.png" alt="telegram">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
